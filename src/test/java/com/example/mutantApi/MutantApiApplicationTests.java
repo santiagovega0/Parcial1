@@ -1,10 +1,10 @@
-package com.example.deConinckRamiro;
+package com.example.mutantApi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DeConinckRamiroApplicationTests {
+class MutantApiApplicationTests {
 
 	@Test
 	void contextLoads() {

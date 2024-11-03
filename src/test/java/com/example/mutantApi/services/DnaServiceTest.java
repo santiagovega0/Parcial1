@@ -1,12 +1,9 @@
-package com.example.deConinckRamiro.services;
-
+package com.example.mutantApi.services;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
-
-public class PersonaServiceTest {
+public class DnaServiceTest {
 
     // ====================================================================================================
     // Tests cubriendo todas las secuencias de matriz 6x6
@@ -20,7 +17,7 @@ public class PersonaServiceTest {
                 "GTAGTC",
                 "AGTCAC"
         };
-        assertTrue(PersonaService.verificarMutante(dna));
+        assertTrue(DnaService.isMutant(dna));
     }
 
     @Test
@@ -33,7 +30,7 @@ public class PersonaServiceTest {
                 "GTAGTC",
                 "GGTCAC"
         };
-        assertTrue(PersonaService.verificarMutante(dna));
+        assertTrue(DnaService.isMutant(dna));
     }
 
     @Test
@@ -46,7 +43,7 @@ public class PersonaServiceTest {
                 "GTAGTC",
                 "AGTCAA"
         };
-        assertTrue(PersonaService.verificarMutante(dna));
+        assertTrue(DnaService.isMutant(dna));
     }
 
     @Test
@@ -59,7 +56,7 @@ public class PersonaServiceTest {
                 "GTAGTC",
                 "AGTCAA"
         };
-        assertTrue(PersonaService.verificarMutante(dna));
+        assertTrue(DnaService.isMutant(dna));
     }
 
     @Test
@@ -72,7 +69,7 @@ public class PersonaServiceTest {
                 "GTAGTC",
                 "AGTCAA"
         };
-        assertTrue(PersonaService.verificarMutante(dna));
+        assertTrue(DnaService.isMutant(dna));
     }
 
     @Test
@@ -85,7 +82,7 @@ public class PersonaServiceTest {
                 "GGCGTC",
                 "AGTCAA"
         };
-        assertTrue(PersonaService.verificarMutante(dna));
+        assertTrue(DnaService.isMutant(dna));
     }
 
     @Test
@@ -98,7 +95,7 @@ public class PersonaServiceTest {
                 "GGAGTC",
                 "AGGCAA"
         };
-        assertTrue(PersonaService.verificarMutante(dna));
+        assertTrue(DnaService.isMutant(dna));
     }
 
     @Test
@@ -111,7 +108,7 @@ public class PersonaServiceTest {
                 "GGATTC",
                 "AGGCAA"
         };
-        assertFalse(PersonaService.verificarMutante(dna));
+        assertFalse(DnaService.isMutant(dna));
     }
 
 
@@ -125,7 +122,7 @@ public class PersonaServiceTest {
                 "TCAG",
                 "GGTC"
         };
-        assertTrue(PersonaService.verificarMutante(dna));
+        assertTrue(DnaService.isMutant(dna));
     }
 
     @Test
@@ -136,7 +133,7 @@ public class PersonaServiceTest {
                 "AAAC",
                 "CGGG"
         };
-        assertFalse(PersonaService.verificarMutante(dna));
+        assertFalse(DnaService.isMutant(dna));
     }
 
     @Test
@@ -147,7 +144,7 @@ public class PersonaServiceTest {
                 "TGAC",
                 "GGTC"
         };
-        assertTrue(PersonaService.verificarMutante(dna));
+        assertTrue(DnaService.isMutant(dna));
     }
 
     @Test
@@ -158,7 +155,7 @@ public class PersonaServiceTest {
                 "AAAA",
                 "AAAA"
         };
-        assertTrue(PersonaService.verificarMutante(dna));
+        assertTrue(DnaService.isMutant(dna));
     }
 
     @Test
@@ -169,7 +166,7 @@ public class PersonaServiceTest {
                 "TAAG",
                 "GGTC"
         };
-        assertFalse(PersonaService.verificarMutante(dna));
+        assertFalse(DnaService.isMutant(dna));
     }
 
     @Test
@@ -185,7 +182,7 @@ public class PersonaServiceTest {
                 "ACTACGACC",
                 "TGAGTATCC"
         };
-        assertTrue(PersonaService.verificarMutante(dna));
+        assertTrue(DnaService.isMutant(dna));
     }
 
     @Test
@@ -201,7 +198,6 @@ public class PersonaServiceTest {
                 "CAAAGGCAT",
                 "GCAGTCCCC"
         };
-        assertTrue(PersonaService.verificarMutante(dna));
+        assertTrue(DnaService.isMutant(dna));
     }
 }
-
